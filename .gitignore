@@ -1,0 +1,5 @@
+# do not push generated files to the remote repository
+_site/
+
+# do not push node_modules to the remote repository
+node_modules/
