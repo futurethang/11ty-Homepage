@@ -1,0 +1,50 @@
+@import "./vars.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=JetBrains+Mono:wght@100;400;700&display=swap');
+/* @import "./bg-anim.css"; */
+
+:root {
+  --primary-bg-color: var(--blue-800);
+  --secondary-bg-color: var(--cyan-500);
+  --primary-text: var(--gray-50);
+  --secondary-text: var(--gray-100);
+  --tertiary-text: var(--gray-300);
+  --paragraph-text: var(--gray-200);
+}
+
+body {
+  background: linear-gradient(360deg, var(--violet-700) 0%, var(--blue-800) 50%);
+  background-blend-mode: overlay;
+  padding: 4rem;
+  font-family: 'Inter', sans-serif;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1, h2 {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--primary-text);
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+}
+
+nav li {
+  display: inline-block;
+}
+
+a {
+  color: var(--tertiary-text);
+  font-weight: 100;
+}
+
+p {
+  color: var(--secondary-text);
+  font-weight: 100;
+}

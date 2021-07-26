@@ -1,6 +1,13 @@
-# Kevin Hyde
-## Now and Future Web Developer
+---
+layout: default-layout.njk
+title: Kevin Hyde
+---
 
-I build modern web applicaitons with top of the line and next generation JavaScript frameworks.
-
-I am passionate about the future of Decentralized Application building, and combine my UX Engineering and Smart Contract development skills to the next version of the Web.
+## Building the Next Web
+  
+\
+I am a UX Engineer that builds visionary cloud based enterprise software with the latest front-end technologies and top industry frameworks.  
+\
+I'm passionate about Web 3.0 and the future of Decentralized Application building on the Ethereum blockchain. I'm eager to use my UX Design and Engineering experience, combined with Solidity smart contract development skills, to build the next version of the Web.  
+\
+I'm also an advocate for wider adoption of the Web Component standard in building moder web applications, with help from awesome projects like Lit.
