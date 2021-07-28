@@ -12,7 +12,7 @@
 }
 
 body {
-  background: linear-gradient(360deg, var(--violet-700) 0%, var(--blue-800) 50%);
+  background: linear-gradient(360deg, var(--violet-700) 0%, var(--blue-800) 70%);
   background-blend-mode: overlay;
   padding: 4rem;
   font-family: 'Inter', sans-serif;
@@ -22,11 +22,22 @@ header,
 footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-h1, h2 {
+footer {
+  margin-top: 4rem;
+}
+
+h1, h2, h3 {
   font-family: 'JetBrains Mono', monospace;
+  margin-top: 2rem;
   color: var(--primary-text);
+}
+
+h1 {
+  margin: 0;
+  text-transform: uppercase;
 }
 
 nav ul {
@@ -42,6 +53,40 @@ nav li {
 a {
   color: var(--tertiary-text);
   font-weight: 100;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover {
+  font-weight: bolder;
+}
+/* The pseudo element has the same content and hover style, so it pre-sets the width of the element and visibility: hidden hides the pseudo element from actual view. */
+a::before {
+  display: block;
+  content: attr(title);
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+main {
+  margin-top: 2rem;
+  max-width: 40rem;
+}
+
+aside ul {
+  margin-top: 4rem;
+  max-width: 40rem;
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 2rem;
+}
+
+aside li {
+  display: inline-block;
 }
 
 p {
