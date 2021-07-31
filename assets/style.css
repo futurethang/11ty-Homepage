@@ -1,5 +1,5 @@
 @import "./vars.css";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=JetBrains+Mono:wght@100;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=JetBrains+Mono:wght@100;400;700&display=swap");
 /* @import "./bg-anim.css"; */
 
 :root {
@@ -12,10 +12,15 @@
 }
 
 body {
-  background: linear-gradient(360deg, var(--violet-700) 0%, var(--blue-800) 70%);
+  background: linear-gradient(
+    360deg,
+    var(--violet-700) -5%,
+    var(--blue-800) 70%
+  );
   background-blend-mode: overlay;
+  background-size: cover;
   padding: 4rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 header,
@@ -29,8 +34,10 @@ footer {
   margin-top: 4rem;
 }
 
-h1, h2, h3 {
-  font-family: 'JetBrains Mono', monospace;
+h1,
+h2,
+h3 {
+  font-family: "JetBrains Mono", monospace;
   margin-top: 2rem;
   color: var(--primary-text);
 }
@@ -57,18 +64,20 @@ a {
   text-align: center;
 }
 
-nav a:hover {
-  font-weight: bolder;
+a:hover:not(.socials > *) {
+  /* font-weight: bolder; */
+  color: #fff;
+  text-decoration: underline;
 }
 /* The pseudo element has the same content and hover style, so it pre-sets the width of the element and visibility: hidden hides the pseudo element from actual view. */
-nav a::before {
+/* nav a::before {
   display: block;
   content: attr(title);
   font-weight: bold;
   height: 0;
   overflow: hidden;
   visibility: hidden;
-}
+} */
 
 main {
   margin-top: 2rem;
@@ -92,4 +101,13 @@ aside li {
 p {
   color: var(--secondary-text);
   font-weight: 100;
+}
+
+.socials a {
+  padding-left: 1rem;
+}
+
+.copyright {
+  color: var(--tertiary-text);
+  font-size: 0.8rem;
 }
