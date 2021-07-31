@@ -1,13 +1,14 @@
 ---
 layout: default-layout.njk
 title: Kevin Hyde
+header: Main Page
 ---
 
 ## Building the Next Web
   
 \
-I am a UX Engineer that builds visionary cloud based enterprise software with the latest front-end technologies and top industry frameworks.  
+I am a UX Engineer that builds innovative cloud-based enterprise software using the latest front-end technologies.  
 \
-I'm passionate about Web 3.0 and the future of Decentralized Application building on the Ethereum blockchain. I'm eager to use my UX Design and Engineering experience, combined with Solidity smart contract development skills, to build the next version of the Web.  
+I'm passionate about Web 3.0 and the future of Decentralized Application building. With a combination of UX Design, Engineering, and Smart Contract development skills, my goal is to be a builder of the Web's next generation, better for users and better for the world.  
 \
-I'm also an advocate for wider adoption of the Web Component standard in building modern web applications, with help from awesome projects like Lit.
+I'm an advocate for wider adoption of the Web Component standard in building modern front ends, with help from awesome projects like [Lit](https://lit.dev/).

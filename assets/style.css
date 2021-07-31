@@ -57,11 +57,11 @@ a {
   text-align: center;
 }
 
-a:hover {
+nav a:hover {
   font-weight: bolder;
 }
 /* The pseudo element has the same content and hover style, so it pre-sets the width of the element and visibility: hidden hides the pseudo element from actual view. */
-a::before {
+nav a::before {
   display: block;
   content: attr(title);
   font-weight: bold;
