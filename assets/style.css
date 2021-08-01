@@ -114,6 +114,11 @@ p {
   padding-left: 1rem;
 }
 
+section .socials {
+  margin-top: 2rem;
+  margin-left: -1rem;
+}
+
 .copyright {
   color: var(--tertiary-text);
   font-size: 0.8rem;
