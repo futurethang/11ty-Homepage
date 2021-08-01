@@ -61,11 +61,13 @@
       {% include "./nav.html" %}
     </header>
     <main>
-      {{ content | safe }}
+      <section>
+        {{ content | safe }}
+      </section>
+      {% if header %}
+        {% include "./aside.html" %}
+      {% endif %}
     </main>
-    {% if header %}
-      {% include "./aside.html" %}
-    {% endif %}
     <footer>
       {% include "./nav.html" %}
       <span class="copyright">

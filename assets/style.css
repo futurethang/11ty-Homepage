@@ -11,6 +11,13 @@
   --paragraph-text: var(--gray-200);
 }
 
+@media screen and (max-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 body {
   background: linear-gradient(
     360deg,
@@ -69,29 +76,29 @@ a:hover:not(.socials > *) {
   color: #fff;
   text-decoration: underline;
 }
-/* The pseudo element has the same content and hover style, so it pre-sets the width of the element and visibility: hidden hides the pseudo element from actual view. */
-/* nav a::before {
-  display: block;
-  content: attr(title);
-  font-weight: bold;
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-} */
+
+section {
+  max-width: 32rem;
+}
 
 main {
+  display: flex;
   margin-top: 2rem;
+  justify-content: space-between;
+  max-width: 62rem;
+}
+
+aside {
+  margin-top: 4rem;
   max-width: 40rem;
 }
 
 aside ul {
-  margin-top: 4rem;
-  max-width: 40rem;
   list-style: none;
   padding-left: 0;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 aside li {
