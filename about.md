@@ -36,6 +36,9 @@ Check out some other projects I'm involved in!
 <a href="https://futurethang.github.io/Cretins-Site/" target="_blank" rel="noopener">Cretins</a>
 </li>
 <li>
+<a href="https://shadowpattern.com/" target="_blank" rel="noopener">Shadow Pattern</a>
+</li>
+<li>
 <a href="http://www.theholyalimonies.band" target="_blank" rel="noopener">The Holy Alimonies</a>
 </li>
 <li>

@@ -18,16 +18,29 @@
   }
 }
 
+html,
 body {
-  background: linear-gradient(
-    360deg,
-    var(--violet-700) -5%,
-    var(--blue-800) 70%
-  );
-  background-blend-mode: overlay;
-  background-size: cover;
+  overscroll-behavior: none;
+}
+
+body {
+  background: linear-gradient(300deg, var(--violet-700), var(--blue-800));
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
   padding: 4rem;
   font-family: "Inter", sans-serif;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 header,
@@ -62,6 +75,7 @@ nav ul {
 
 nav li {
   display: inline-block;
+  margin: 0 0.5rem;
 }
 
 a {
